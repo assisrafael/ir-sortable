@@ -42,10 +42,10 @@
   /**
    * sortableItem directive.
    */
-  mainModule.directive('sortableItem', ['sortableConfig',
+  mainModule.directive('irSortableItem', ['sortableConfig',
     function (sortableConfig) {
       return {
-        require: '^sortable',
+        require: '^irSortable',
         restrict: 'A',
         controller: 'ui.sortable.sortableItemController',
         link: function (scope, element, attrs, sortableController) {

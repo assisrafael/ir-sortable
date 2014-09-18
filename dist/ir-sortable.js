@@ -384,7 +384,7 @@
    * Parent directive for draggable and sortable items.
    * Sets modelValue, callbacks, element in scope.
    */
-  mainModule.directive('sortable',
+  mainModule.directive('irSortable',
     function () {
       return {
         require: 'ngModel', // get a hold of NgModelController
@@ -466,7 +466,7 @@
           };
 
           //Set the sortOptions callbacks else set it to default.
-          scope.$watch(attrs.sortable, function (newVal, oldVal) {
+          scope.$watch(attrs.irSortable, function (newVal, oldVal) {
             angular.forEach(newVal, function (value, key) {
               if (callbacks[key]) {
                 if (typeof value === 'function') {
@@ -483,6 +483,7 @@
     });
 
 }());
+
 /*jshint indent: 2 */
 /*global angular: false */
 
@@ -507,10 +508,10 @@
   /**
    * Directive for sortable item handle.
    */
-  mainModule.directive('sortableItemHandle', ['sortableConfig', '$helper', '$window', '$document',
+  mainModule.directive('irSortableItemHandle', ['sortableConfig', '$helper', '$window', '$document',
     function (sortableConfig, $helper, $window, $document) {
       return {
-        require: '^sortableItem',
+        require: '^irSortableItem',
         scope: true,
         restrict: 'A',
         controller: 'ui.sortable.sortableItemHandleController',
@@ -882,6 +883,7 @@
       };
     }]);
 }());
+
 /*jshint indent: 2 */
 /*global angular: false */
 
@@ -926,10 +928,10 @@
   /**
    * sortableItem directive.
    */
-  mainModule.directive('sortableItem', ['sortableConfig',
+  mainModule.directive('irSortableItem', ['sortableConfig',
     function (sortableConfig) {
       return {
-        require: '^sortable',
+        require: '^irSortable',
         restrict: 'A',
         controller: 'ui.sortable.sortableItemController',
         link: function (scope, element, attrs, sortableController) {

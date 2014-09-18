@@ -102,7 +102,7 @@ module.exports = function (grunt) {
           '<%= cfg.srcDir %>/sortable-item-handle.js',
           '<%= cfg.srcDir %>/sortable-item.js'
         ],
-        dest: '<%= cfg.buildDir %>/ng-sortable.js'
+        dest: '<%= cfg.buildDir %>/ir-sortable.js'
       }
     },
 
@@ -114,7 +114,7 @@ module.exports = function (grunt) {
       },
       build: {
         files: {
-          '<%= cfg.buildDir %>/ng-sortable.min.js': ['<%= cfg.buildDir %>/ng-sortable.js']
+          '<%= cfg.buildDir %>/ir-sortable.min.js': ['<%= cfg.buildDir %>/ir-sortable.js']
         }
       }
     },
@@ -140,10 +140,10 @@ module.exports = function (grunt) {
     cssmin: {
       add_banner: {
         options: {
-          banner: '/* ng-sortable css file */'
+          banner: '/* ir-sortable css file */'
         },
         files: {
-          '<%= cfg.buildDir %>/ng-sortable.min.css': ['<%= cfg.srcDir %>/ng-sortable.css']
+          '<%= cfg.buildDir %>/ir-sortable.min.css': ['<%= cfg.srcDir %>/ir-sortable.css']
         }
       }
     },

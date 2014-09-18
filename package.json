@@ -1,12 +1,12 @@
 {
-  "name": "ng-sortable",
+  "name": "ir-sortable",
   "version": "0.1.0",
-  "homepage": "https://github.com/a5hik/ng-sortable",
+  "homepage": "https://github.com/a5hik/ir-sortable",
   "author": "Muhammed Ashik <https://github.com/a5hik>",
   "description": "Angular Library for Drag and Drop, supports Sortable and Draggable.",
   "main": [
-    "dist/ng-sortable.min.js",
-    "dist/ng-sortable.min.css"
+    "dist/ir-sortable.min.js",
+    "dist/ir-sortable.min.css"
   ],
   "keywords": [
     "angular",
